@@ -6,7 +6,7 @@
 
     "build": {
         "dockerfile": "Dockerfile"
-    }
+    },
 
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
@@ -19,7 +19,11 @@
 
     // Configure tool-specific properties.
     // "customizations": {},
-    
+
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"
+
+    // Set up container name using docker CLI argument.
+    // More info: https://docs.docker.com/reference/cli/docker/container/run/#name
+    "runArgs": [ "--name", "scrapy-tutorial-dev" ]
 }
